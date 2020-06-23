@@ -1,0 +1,42 @@
+.dashboardContainer {
+  width: 100%;
+  margin-top: 12vh;
+}
+
+.leftSideBar {
+  background-color: blueviolet;
+  border-radius: 10px;
+  width: 250px;
+  transition: all 1s linear;
+  float: left;
+  height: 100vh;
+  position: fixed;
+  margin-left: 5px;
+}
+.rightContents {
+  margin-left: 260px;
+  background-color: purple;
+  border-radius: 10px;
+  
+}
+.hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 998px) {
+  .leftSideBar {
+    opacity: 0;
+  }
+  .sidebar-open {
+    opacity: 1;
+  }
+  .hamburger {
+    display: inline;
+  }
+  .rightContents {
+    margin-left: 0px;
+    background-color: grey;
+    border-radius: 10px;
+    
+  }
+}
